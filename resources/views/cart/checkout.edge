@@ -1,0 +1,110 @@
+@layout('layouts/main')
+
+
+@section('title')
+Checkout | HORUS
+@endsection
+
+
+@section('content-area')
+<section class="hero-area checkout-page">
+  <div class="container">
+  <div class="box-container">
+    <h1>Check-out</h1>
+    <hr>
+    <div class="checkout-grid">
+    <div class="forms">
+      <h3>Shipping information</h3>
+      <form>
+        <div class="form-group">
+        <label for="fname">First Name</label>
+        <Input type="text" id="fname" name="fname">
+        </div>
+        <div class="form-group">
+        <label for="lname">Last Name</label>
+        <Input type="text" id="lname" name="lname">
+        </div>
+        <div class="form-group">
+        <label for="address1">Address #1</label>
+        <Input type="text" id="address1" name="address1">
+        </div>
+        <div class="form-group">
+        <label for="address2">Address #2</label>
+        <Input type="text" id="address2" name="address2">
+        </div>
+        <div class="form-group">
+        <label for="city">City</label>
+        <Input type="text" id="city" name="city">
+        </div>
+        <div class="form-group">
+        <label for="postcode">Postcode</label>
+        <Input type="text" id="postcode" name="postcode">
+        </div>
+        <div class="form-group">
+        <label for="country">Country</label>
+        <Input type="text" id="country" name="country">
+        </div>
+        </form>
+
+        <h3>Billing information</h3>
+        <form>
+          <div class="form-group">
+          <label for="fname">First Name</label>
+          <Input type="text" id="fname" name="fname">
+          </div>
+          <div class="form-group">
+          <label for="lname">Last Name</label>
+          <Input type="text" id="lname" name="lname">
+          </div>
+          <div class="form-group">
+          <label for="address1">Address #1</label>
+          <Input type="text" id="address1" name="address1">
+          </div>
+          <div class="form-group">
+          <label for="address2">Address #2</label>
+          <Input type="text" id="address2" name="address2">
+          </div>
+          <div class="form-group">
+          <label for="city">City</label>
+          <Input type="text" id="city" name="city">
+          </div>
+          <div class="form-group">
+          <label for="postcode">Zip/Postal code</label>
+          <Input type="text" id="postcode" name="postcode">
+          </div>
+          <div class="form-group">
+          <label for="country">Country</label>
+          <Input type="text" id="country" name="country">
+          </div>
+          </form>
+        </div>
+
+        <div class="totals">
+        <div class="title">
+          Order Summary:
+        </div>
+        <div class="items">
+          <span>Items: </span>10
+        </div>
+        <div class="tax">
+          <span>Tax: </span>£8.00
+        </div>
+        <div class="shipping">
+          <span>Shipping: </span>£10.00
+        </div>
+        <div class="price">
+          <span>Total: </span>£2,500
+        </div>
+        </div>
+        </div>
+
+  </div>
+  </div>
+</section>
+@endsection
+
+
+
+@section('JavaScipt')
+
+@endsection

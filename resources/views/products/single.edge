@@ -1,0 +1,80 @@
+@layout('layouts/main')
+
+
+@section('title')
+Buy Authentic Sneakers | HORUS
+@endsection
+
+@section('content-area')
+<section class="hero-area single-product-page">
+  <div class="product-imgs">
+  <div class="product-container">
+    <div class="circle-shape">
+      <img class="carousel-img current-slide" src="/img/products/nike-airforce1-offwhite-volt.png"
+        alt="nike airforce 1 off white volt">
+  </div>
+  </div>
+</div>
+
+
+
+  <div class="product-details">
+    <div class="titles">
+      <div class="brand">
+        Nike
+      </div>
+      <div class="product">
+        Air Force 1 X OFF-WHITE 'Volt'
+      </div>
+      <div class="product-sku">
+        <p>SKU: AO4606 700</p>
+      </div>
+      </div>
+      <div class="details">
+      <p>The OFF-WHITE x Air Force 1 ‘Volt’ veers from the established orthodoxy of Virgil Abloh’s Nike design playbook,
+      maximizing a neon hue from the Swoosh’s signature palette that the designer had previously left untouched. It coats
+      the shoe’s mixed-material upper as well as its laces and midsole. Contrasting hits of black bring tonal variety to
+      the Swoosh and medial-side quarter panel, which is printed with Virgil’s trademark text.</p>
+      </div>
+
+      <div id="ProductAddToCartRoot"></div>
+
+
+        <div class="detail-space">
+          <div class="detail">
+            <input type="checkbox" id="delivery-dropdown" class="toggle"  />
+            <label class="title" for="delivery-dropdown">Drop-Off</label>
+            <div class="content">
+              <p> UK Delivery (excludes Northern Ireland)
+                - UK Standard Delivery - (3-5 working days)
+                - UK Express Delivery - Order before 7pm - (1 working day)
+                - UK Click and Collect - (over 5000 locations, 2-3 working days)
+                We ship worldwide - for all other territories please enter your shipping address at checkout for an accurate delivery estimate
+                Please allow an extra 3-5 days for delivery of personalised items, including player name/number</p>
+            </div>
+            </div>
+
+            <div class="detail-space">
+              <div class="detail">
+                <input type="checkbox" id="return-dropdown" class="toggle"  />
+                <label class="title" for="return-dropdown">Return</label>
+                <div class="content">
+                  <p class=""> Our return policy is as follows:
+                   -  Return requests must be submitted within 3 days after the item has been delivered.
+                   -  Item(s) must be shipped to Stadium Goods within 3 days after approval.  Returns cannot be processed or accepted at our retail location.
+                   -  Customers are responsible for return shipping. For your protection, we suggest using a carrier that provides tracking information.
+                   -  Item(s) must be unworn and in the original condition received.  The box must also be in the same condition as received.  Shoe boxes should not be used as the packing box.
+                   -  Final sale orders are not eligible for return, which include items purchased during a promotional period; International orders; and Items purchased at our retail location.
+                   - Once your return is approved & received, you will be issued a merchandise credit less a 10% restocking fee. </p>
+                </div>
+                </div>
+
+          </div>
+  </div>
+</section>
+@endsection
+
+
+@section('javascript')
+<script src="/js/dist/ProductAddToCart.js"></script>
+@endsection

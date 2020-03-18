@@ -1,0 +1,126 @@
+@layout('layouts/main')
+
+
+@section('title')
+Shop All Sneakers | HORUS
+@endsection
+
+@section('content-area')
+<section class="hero-area shop-all-page">
+
+  <div class="filter-space">
+    <div class="filter">
+    <input type="checkbox" id="gender-options" class="toggle"  />
+    <label class="title" for="gender-options">Gender</label>
+    <div class="content">
+    <div class="gender">
+    <div class="option">Male</div>
+    <div class="option">Female</div>
+    </div>
+    </div>
+    </div>
+
+    <div class="filter">
+    <input type="checkbox" id="brand-options" class="toggle"  />
+    <label class="title" for="brand-options">Brand</label>
+    <div class="content">
+    <div class="brand">
+    <div class="option">nike</div>
+    <div class="option">adidas</div>
+    <div class="option">puma</div>
+    <div class="option">new balance</div>
+    <div class="option">gucci</div>
+    <div class="option">balenciaga</div>
+    </div>
+    </div>
+    </div>
+
+    <div class="filter">
+    <input type="checkbox" id="price-options" class="toggle"  />
+    <label class="title" for="price-options">Price</label>
+    <div class="content">
+    <div class="price">
+      <input type="text" name="min" placeholder="min" class="option" >
+      <input type="text" name="max" placeholder="max" class="option" >
+    </div>
+    </div>
+    </div>
+
+    <div class="filter">
+    <input type="checkbox" id="colour-options" class="toggle"  />
+    <label class="title" for="colour-options">Colour</label>
+    <div class="content">
+    <div class="colour">
+    <div class="option">black</div>
+    <div class="option">blue</div>
+    <div class="option">orange</div>
+    <div class="option">brown</div>
+    <div class="option">green</div>
+    <div class="option">grey</div>
+    <div class="option">white</div>
+    <div class="option">purple</div>
+    <div class="option">red</div>
+    <div class="option">pink</div>
+    <div class="option">multi</div>
+    </div>
+    </div>
+    </div>
+
+    <div class="filter">
+    <input type="checkbox" id="size-options" class="toggle"  />
+    <label class="title" for="size-options">Size</label>
+    <div class="content">
+    <div class="size">
+    <div class="option">4</div>
+    <div class="option">4.5</div>
+    <div class="option">5</div>
+    <div class="option">5.5</div>
+    <div class="option">6</div>
+    <div class="option">6.5</div>
+    <div class="option">7</div>
+    <div class="option">7.5</div>
+    <div class="option">8</div>
+    <div class="option">8.5</div>
+    <div class="option">9</div>
+    <div class="option">9.5</div>
+    <div class="option">10</div>
+    <div class="option">10.5</div>
+    <div class="option">11</div>
+    <div class="option">11.5</div>
+    </div>
+    </div>
+    </div>
+    <button>filter</button>
+  </div>
+
+  <div class="shop-all-grid">
+    @each(product in products)
+      <div class="product-wrap">
+      <div class="product">
+      <div class="circle-shape">
+        <a href="nike/airforce1/offwhite-volt">
+          <img src="/img/products/nike-airforce1-offwhite-volt.png">
+        </a>
+      </div>
+
+      </div>
+      <div class="title">
+        Off-White X Air Force 1 Volt
+      </div>
+      <div class="price">
+        £450.00
+      </div>
+      </div>
+@endeach
+
+
+
+  </div>
+</section>
+@endsection
+
+
+
+@section('javascipt')
+
+@endsection

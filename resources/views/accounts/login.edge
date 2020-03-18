@@ -1,0 +1,60 @@
+@layout('layouts/main')
+
+
+@section('title')
+HORUS | Login
+@endsection
+
+
+@section('content-area')
+<section class="hero-area login_register-page">
+  <div class="container">
+  <div class="box-container">
+    <h2>Log In</h2>
+    <div class="login-grid login">
+
+        <form action="/login" method="POST">
+          {{ csrfField() }}
+          <input type="email" name="email" placeholder="Email" value="
+          {{old('email', '')}}" class="
+            @if(hasErrorFor('email'))
+                error
+              @endif
+              "/>
+              @if(hasErrorFor('email'))
+                <div class="error-message">{{ getErrorFor('email')}}</div>
+              @endif
+          <input type="password" name="password" placeholder="Password" value="
+          {{old('password', '')}}" class="
+            @if(hasErrorFor('password'))
+                error
+              @endif
+              "/>
+              @if(hasErrorFor('password'))
+                <div class="error-message">{{ getErrorFor('password')}}</div>
+              @endif
+          <a href="/accounts/change-password">Forgot Password?</a>
+          <button type="submit">Log In</button>
+        </form>
+
+      <div class="line"></div>
+      <div class="social-accounts">
+        <a href="#"><span class="ti-google"></span>Google</a>
+        <a href="#"><span class="ti-facebook"></span>Facebook</a>
+        <a href="#"><span class="ti-twitter-alt"></span>Twitter</a>
+        <a href="#"><span class="ti-instagram"></span>Instagram</a>
+      </div>
+    </div>
+    <div class="form-footer">
+      <a href="/register">Create Account &plus;</a>
+    </div>
+  </div>
+  </div>
+</section>
+@endsection
+
+
+
+@section('JavaScipt')
+
+@endsection

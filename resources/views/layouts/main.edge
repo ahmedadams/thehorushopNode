@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>
+     @!section('title')
+   </title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+
+
+</head>
+<body>
+@include('partials/alert-box')
+<header>
+<div class="nav-logo">
+  <a href="/">
+  <img src="/img/logo.png" style="width:120px;, height:100px;">
+  </a>
+</div>
+
+<div class="top-nav">
+  <a href="/about">about</a>
+  <a href="/products">shop all</a>
+  <a href="/products/new-arrivals">new arrival</a>
+  <div href="#" id="CartBtnRoot">cart<div>0</div></div>
+  <div class="account-dropdown">
+    <div class="icons">
+      <span class="ti-user" style="font-size:25px;"></span>
+      <button><span class="ti-angle-down"></span></button>
+    </div>
+    <div class="dropdown-links push">
+      <a href="/register">Sign up</a>
+      <a href="/login">Sign in</a>
+      <a href="/accounts/orders">My Orders</a>
+    </div>
+  </div>
+</div>
+</header>
+
+
+
+
+@!section('content-area')
+
+@!section('new-arrivals-area')
+
+<div id="CartPopupRoot"></div>
+
+
+
+<footer class="footer">
+  <div class="socials">
+    <div class="title">Connect with us</div>
+    <div class="links">
+      <a href="#"><span class="ti-google"></span></a>
+      <a href="#"><span class="ti-facebook"></span></a>
+      <a href="#"><span class="ti-twitter-alt"></span></a>
+      <a href="#"><span class="ti-instagram"></span></a>
+    </div>
+  </div>
+  <div class="download-links">
+    <div class="title">download the app</div>
+    <a href="https://play.google.com/store?hl=en" target="_blank"><img src="/img/google-play-store.png" width="150px" height="48px" alt="google-play-store-button"></a>
+    <a href="https://www.apple.com/ios/app-store/" target="_blank"><img src="/img/apple-app-store.png"  width="150px" height="50px" alt="apple-app-store"></a>
+  </div>
+  <div class="support">
+    <div class="title">support</div>
+      <a href="#"><span class="faq">FAQ</span></a></li>
+      <a href="#"><span class="privacy">PRIVACY</span></a></li>
+      <a href="#"><span class="terms"></span>TERMS</a></li>
+  </div>
+</footer>
+
+  <script src="/js/dist/vendors.js"></script>
+  @!section('javascript')
+
+  <script src="/js/dist/CartComponents.js"></script>
+
+  <script>
+    var alertBox = document.getElementById("alert-box")
+    alertBox.addEventListener("click", ()  => {
+        document.getElementById("alert-box").classList.remove("active")
+      });
+  </script>
+
+</body>
+</html>
