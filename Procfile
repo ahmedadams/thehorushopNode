@@ -1,1 +1,1 @@
-web: horus server.js
+web: node server.js
