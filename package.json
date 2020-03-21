@@ -9,7 +9,7 @@
   "description": "The fullstack application boilerplate for Adonisjs",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "horus server.js",
     "test": "node ace test",
     "build": "gulp build",
     "dev:webpack": "webpack --mode development --env.NODE_ENV=dev",
