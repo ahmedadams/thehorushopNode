@@ -24,7 +24,6 @@ new Ignitor(require('@adonisjs/fold'))
   .fireHttpServer()
   .catch(console.error)
 
-  // const port = process.env.PORT || 3333;
-  // server.listen(port, () => {
-  //   console.log(`Server Running on port: ${port}`);
-  // });
+  app.listen = process.env.PORT || 3000 , () => {
+    console.log('Server is running on http://www.localhost:3000/ to stop server press control+c');
+  });
