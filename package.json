@@ -3,7 +3,7 @@
   "version": "4.1.0",
   "adonis-version": "4.1.0",
   "engines": {
-    "node": "10.18.1",
+    "node": "10.19.0",
     "npm": "6.13.4"
   },
   "description": "The fullstack application boilerplate for Adonisjs",
