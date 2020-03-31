@@ -18,7 +18,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'mysql'),
+  connection: Env.get('DB_CONNECTION', 'mysql://b1685674472b75:33ca5fc7@eu-cdbr-west-02.cleardb.net/heroku_84cc7c980c5b887?reconnect=true'),
 
   /*
   |--------------------------------------------------------------------------
