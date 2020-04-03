@@ -18,7 +18,7 @@ module.exports = {
   | interacting with SQL databases.
   |
   */
-  connection: Env.get('DB_CONNECTION', 'mysql://b1685674472b75:33ca5fc7@eu-cdbr-west-02.cleardb.net/heroku_84cc7c980c5b887?reconnect=true'),
+  connection: Env.get('DB_CONNECTION', 'mysql'),
 
   /*
   |--------------------------------------------------------------------------
@@ -49,14 +49,15 @@ module.exports = {
   | npm i --save mysql
   |
   */
+
   mysql: {
     client: 'mysql',
     connection: {
-      host: Env.get('DB_HOST', '127.0.0.1'),
+      host: Env.get('DB_HOST', 'eu-cdbr-west-02.cleardb.net'),
       port: Env.get('DB_PORT', '3306'),
-      user: Env.get('DB_USER', 'root'),
-      password: Env.get('DB_PASSWORD', ''),
-      database: Env.get('DB_DATABASE', 'horus')
+      user: Env.get('DB_USER', 'b1685674472b75'),
+      password: Env.get('DB_PASSWORD', '33ca5fc7'),
+      database: Env.get('DB_DATABASE', 'heroku_84cc7c980c5b887')
     }
   },
 
